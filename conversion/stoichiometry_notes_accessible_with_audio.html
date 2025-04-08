@@ -61,7 +61,7 @@
  <h3>Still image used in this example</h3>
     <p>This still image was captured from Prof. Jeff Gray's <a href="https://youtu.be/RYsrlDTvPao?feature=shared" target="_blank">lecture</a> "Reactions and Matrix Equations." 
         I selected the frame from this video because it typifies lecture capture video from the time period.
-    Using this image, I prompted ChatGPT to convert it into an accessible HTML file..</p>
+    Using this image, I prompted ChatGPT to convert it into an accessible HTML file.</p>
     <img 
         src="Screenshot_2025-04-07_at_5.10.24_PM.png" 
         alt="Photograph of a blackboard with stoichiometric coefficients, equations, and descriptions written in chalk."
@@ -126,10 +126,11 @@
                 </mrow>
             </math></p>
 
-            <p><strong>Description:</strong><br>
+            <p><strong>Reaction</strong><br>
                 The reaction shown is negative one times the stoichiometric coefficient of ammonia, NH₃, plus the stoichiometric coefficient of oxygen, O₂, 
                 yields the stoichiometric coefficient of nitric oxide, NO, plus the stoichiometric coefficient of water, H₂O.
                 <br><br>
+                <strong>Element Balances</strong><br>
                 For the element balance on nitrogen: one times the stoichiometric coefficient of ammonia, plus zero, 
                 plus the stoichiometric coefficient of nitric oxide, equals zero. This implies that 
                 the stoichiometric coefficient of ammonia is equal to that of nitric oxide.
@@ -146,24 +147,54 @@
         <div class="right">
             <h3>Stoichiometric Coefficients Notes</h3>
             <ul>
-                <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> for each compound <i>i</i></li>
-                <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>C</mi><mi>&#x03BD;</mi></msub></math> (composition matrix form)</li>
-                <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> is <u>negative</u> for <b>reactants</b></li>
-                <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> is <u>positive</u> for <b>products</b></li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub><mi>&#x03BD;</mi><mi>i</mi></msub>
+                    </math> for each compound <i>i</i> 
+                    (<em>initially written as V<sub>i</sub> then clarified via an arrow as the Greek letter ν</em>).
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub><mi>&#x03BD;</mi><mi>i</mi></msub>
+                    </math> is <u>negative</u> for <b>reactants</b>.
+                </li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub><mi>&#x03BD;</mi><mi>i</mi></msub>
+                    </math> is <u>positive</u> for <b>products</b>.
+                </li>
                 <li>3 equations (one for each element: N, O, H)</li>
-                <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>unknowns</mi></msub></math> (here, 4 unknowns for NH₃, O₂, NO, H₂O)</li>
-                <li>Pick "basis" <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x21D2;</mo> <msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub> = <mn>1</mn></math></li>
+                <li>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <msub><mi>&#x03BD;</mi><mi>unknowns</mi></msub>
+                    </math>
+                    (here, 4 unknowns for NH₃, O₂, NO, H₂O)
+                </li>
+                <li>
+                    Pick "basis" 
+                    <math xmlns="http://www.w3.org/1998/Math/MathML">
+                        <mo>&#x21D2;</mo>
+                        <msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub> = <mn>1</mn>
+                    </math>
+                </li>
             </ul>
 
             <p><strong>Description:</strong><br>
-                The stoichiometric coefficient nu sub i represents the amount associated with each compound i. 
-                The notation C sub nu is also introduced to show how these coefficients appear in matrix form. 
-                Nu sub i is negative for reactants, meaning the substances consumed in the reaction, 
-                and nu sub i is positive for products, meaning the substances formed by the reaction. 
-                There are three balance equations in total (one for each element). 
-                There are also four unknown coefficients, referring to the stoichiometric coefficients of NH₃, O₂, NO, and H₂O. 
-                To solve these, one typically selects a basis value; for instance, by setting the stoichiometric coefficient of ammonia 
-                (nu sub NH₃) equal to one.
+                The stoichiometric coefficient 
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>&#x03BD;</mi><mi>i</mi></msub>
+                </math> 
+                represents the amount associated with each compound <i>i</i>. Notice that the professor initially writes this coefficient as V<sub>i</sub> on the board and then, with an arrow pointing to it, clarifies that it is actually the Greek letter ν.
+                <br><br>
+                In this framework, 
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <msub><mi>&#x03BD;</mi><mi>i</mi></msub>
+                </math> 
+                is negative for reactants (substances consumed) and positive for products (substances formed). There are three balance equations (one for each element) and four unknowns (the coefficients for NH₃, O₂, NO, and H₂O). To solve these, a common approach is to set a “basis” value, such as 
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mo>&#x21D2;</mo>
+                    <msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub> = <mn>1</mn>
+                </math>.
             </p>
         </div>
     </div>
