@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stoichiometry Notes - Accessible with Audio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .columns {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .left, .right {
+            flex: 1;
+        }
+        .left {
+            border-right: 2px solid #ccc;
+            padding-right: 20px;
+        }
+        .right {
+            padding-left: 20px;
+        }
+        img {
+            margin-top: 40px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<section aria-labelledby="audio-description">
+    <h2 id="audio-description">Audio Version</h2>
+    <p>This section provides an audio narration of the content for users who prefer or require an alternative format.</p>
+    <audio controls>
+        <source src="stoichiometry_notes_accessible.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</section>
+
+
+<p>This content provides an overview of a chemical reaction used in the intermediate step of nitric acid synthesis. 
+It includes the balanced chemical equation, the element-wise balance breakdown for nitrogen, oxygen, and hydrogen, 
+and an explanation of the stoichiometric coefficient rules that guide how these equations are formed and solved. 
+It is intended to provide both visual and spoken clarity for those studying chemical reactions, including accessibility for blind or visually impaired individuals.</p>
+
+
+<div class="columns">
+    <div class="left">
+        <h2>Reaction</h2>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+                <mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo><msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub>
+                <mo>+</mo>
+                <msub><mi>&#x03BD;</mi><mi>O&#x2082;</mi></msub>
+                <mo>&#x2192;</mo>
+                <msub><mi>&#x03BD;</mi><mi>NO</mi></msub>
+                <mo>+</mo>
+                <msub><mi>&#x03BD;</mi><mi>H&#x2082;O</mi></msub>
+            </mrow>
+        </math>
+
+        <h2>Element Balances</h2>
+        <p><strong>N:</strong>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+                <mn>1</mn><msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub>
+                <mo>+</mo><mn>0</mn><mo>+</mo><msub><mi>&#x03BD;</mi><mi>NO</mi></msub>
+                <mo>=</mo><mn>0</mn>
+                <mo>&#x21D2;</mo>
+                <msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub>
+                <mo>=</mo>
+                <msub><mi>&#x03BD;</mi><mi>NO</mi></msub>
+            </mrow>
+        </math></p>
+
+        <p><strong>O:</strong>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+                <mn>2</mn><msub><mi>&#x03BD;</mi><mi>O&#x2082;</mi></msub>
+                <mo>+</mo><msub><mi>&#x03BD;</mi><mi>NO</mi></msub>
+                <mo>+</mo><msub><mi>&#x03BD;</mi><mi>H&#x2082;O</mi></msub>
+                <mo>=</mo><mn>0</mn>
+            </mrow>
+        </math></p>
+
+        <p><strong>H:</strong>
+        <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+            <mrow>
+                <mn>3</mn><msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub>
+                <mo>+</mo>
+                <mn>2</mn><msub><mi>&#x03BD;</mi><mi>H&#x2082;O</mi></msub>
+                <mo>=</mo><mn>0</mn>
+            </mrow>
+        </math></p>
+
+        
+<p><strong>Spoken Description (Left Column):</strong><br>
+The reaction shown is negative one times the stoichiometric coefficient of ammonia, NH₃, plus the stoichiometric coefficient of oxygen, O₂, yields the stoichiometric coefficient of nitric oxide, NO, plus the stoichiometric coefficient of water, H₂O.
+
+For the element balance on nitrogen: one times the stoichiometric coefficient of ammonia, plus zero, plus the stoichiometric coefficient of nitric oxide, equals zero. This implies that the stoichiometric coefficient of ammonia is equal to that of nitric oxide.
+
+For the oxygen balance: two times the stoichiometric coefficient of oxygen, plus the stoichiometric coefficient of nitric oxide, plus the stoichiometric coefficient of water, equals zero.
+
+For the hydrogen balance: three times the stoichiometric coefficient of ammonia, plus two times the stoichiometric coefficient of water, equals zero.
+</p>
+
+    </div>
+
+    <div class="right">
+        <h2>Stoichiometric Coefficients Notes</h2>
+        <ul>
+            <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> for each compound <i>i</i></li>
+            <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>C</mi><mi>&#x03BD;</mi></msub></math></li>
+            <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> is <u>negative</u> for <b>reactants</b></li>
+            <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>i</mi></msub></math> is <u>positive</u> for <b>products</b></li>
+            <li>3 equations</li>
+            <li><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>&#x03BD;</mi><mi>unknowns</mi></msub></math></li>
+            <li>Pick "basis" <math xmlns="http://www.w3.org/1998/Math/MathML"><mo>&#x21D2;</mo> <msub><mi>&#x03BD;</mi><mi>NH&#x2083;</mi></msub> = <mn>1</mn></math></li>
+        </ul>
+        
+<p><strong>Spoken Description (Right Column):</strong><br>
+The stoichiometric coefficient nu sub i represents the amount associated with each compound i. 
+The notation C sub nu is also introduced. 
+Nu sub i is negative for reactants, meaning the substances consumed in the reaction, 
+and nu sub i is positive for products, meaning the substances formed by the reaction. 
+There are three equations in total. 
+There are also nu unknowns, referring to the unknown values for each stoichiometric coefficient. 
+To solve these, one typically selects a basis value, for example by setting the stoichiometric coefficient of ammonia, nu sub NH₃, equal to one.
+</p>
+
+    </div>
+</div>
+
+<h2>Original Blackboard Image</h2>
+<img src="Screenshot_2025-04-07_at_5.10.24_PM.png" alt="Photograph of a blackboard with stoichiometric coefficients, equations, and descriptions written in chalk.">
+</body>
+</html>
